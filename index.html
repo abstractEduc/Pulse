@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
+
+    
 <head>
     <meta charset="UTF-8">
     <title>Pulse – Focus Timer and Goal Tracker</title>
@@ -23,6 +27,30 @@
         .contact a { color:#227c9d; text-decoration:none; }
         .faq strong { color:#228d12; }
         .shield { font-size:1.5em; vertical-align:middle; color:#227c9d; }
+
+            .gallery-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 24px;
+        align-items: start;
+        }
+    
+    .gallery-row img {
+        width: 100%;
+        max-width: 340px;
+        border-radius: 16px;
+        box-shadow: 0 2px 12px #0001;
+        margin-bottom: 0;
+        background: #f7fafc;
+    }
+    @media (max-width: 600px) {
+        .gallery-row {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+    }
+
+        
     </style>
 </head>
 <body>
@@ -86,10 +114,12 @@
         </div>
 
         <!-- GALLERY / VISUALS -->
-        <div class="gallery">
+               <div class="gallery">
             <h3>See Pulse In Action</h3>
-            <img src="Timer.png" alt="Timer" />
-            <img src="Daily.png" alt=" Daily Goal tracking view" />
+            <div class="gallery-row">
+                <img src="Timer.png" alt="Timer" />
+                <img src="Daily.png" alt="Daily Goal tracking view" />
+            </div>
         </div>
 
         <!-- TESTIMONIALS -->
