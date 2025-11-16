@@ -2,79 +2,134 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pulse – The Task List and Pomodor Focus Timer App</title>
+    <title>Pomodoro Pulse – Focus Timer and Goal Tracker</title>
+    <meta name="description" content="Pomodoro Pulse for iOS helps you focus, track goals, and stay private with lock screen controls, daily/weekly/monthly goal management, and local-only storage.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { font-family: 'Roboto', Arial, sans-serif; background:#f6f8fa; margin:0; }
-        .container { max-width: 700px; margin:40px auto; background:#fff; padding:2em; border-radius:12px; box-shadow:0 4px 32px #0001; }
+        body { font-family: 'Segoe UI', 'Roboto', Arial, sans-serif; background:#f7fafc; margin:0; color:#272b31; }
+        .container { max-width: 720px; margin:40px auto; background:#fff; padding:2em; border-radius:12px; box-shadow:0px 4px 32px #0002; }
         .hero { text-align:center; }
-        .hero img { max-width:220px; margin:30px 0; }
-        .features, .testimonials, .faq { margin:2em 0; }
+        .hero img { max-width:210px; margin:32px 0 16px 0; border-radius:32px; box-shadow:0 2px 20px #227c9d33; }
+        .cta { background:#227c9d; color:#fff; font-size:1.25em; padding:14px 40px; border-radius:8px; text-decoration:none; font-weight:600; display:inline-block; margin-top:16px;}
+        h1,h2,h3 { margin:1em 0 0.5em 0; }
+        ul { margin:0; padding-left:18px;}
+        li { margin:0.4em 0; }
+        .features,.goals-highlight,.privacy-highlight,.testimonials,.faq,.gallery,.contact { margin:2em 0; }
         .gallery img { max-width:100%; border-radius:16px; box-shadow:0 2px 12px #0001; margin-bottom:24px; }
-        .appstore { display:inline-block; margin:16px 0;}
-        h1,h2,h3 { color:#272b31; }
-        .cta { background:#227c9d; color:#fff; padding:16px 32px; border-radius:8px; text-decoration:none; font-weight:bold;}
+        .privacy-highlight { background:#e9f5fd; padding:1em; border-radius:8px; }
+        .goals-highlight { background:#fff6e1; padding:1em; border-radius:8px;}
+        blockquote { font-style:italic; color:#444; background:#f3f3ff; padding:0.8em 1em; border-left:4px solid #227c9d; margin:1em 0;}
+        .appstore { display:inline-block; margin:18px 0;}
+        .contact a { color:#227c9d; text-decoration:none; }
+        .faq strong { color:#228d12; }
+        .shield { font-size:1.5em; vertical-align:middle; color:#227c9d; }
     </style>
 </head>
 <body>
     <div class="container">
+
+        <!-- HERO SECTION -->
         <div class="hero">
-            <h1>Pulse</h1>
-            <h2>The Focus Timer for Achievers</h2>
+            <h1>Pomodoro Pulse</h1>
+            <h2>The Focus Timer & Goal Tracker for Achievers</h2>
             <img src="screenshot.png" alt="Pomodoro Pulse app interface" />
-            <a class="cta appstore" href="#">Download on the App Store</a>
+            <div>
+                <a class="cta appstore" href="#">Download on the App Store</a>
+            </div>
+            <p style="margin-top: 12px; font-size:1.05em; color:#227c9d;">
+                Your goals, your data—never shared, never tracked. <span class="shield">🔒</span>
+            </p>
         </div>
+
+        <!-- FEATURES LIST -->
         <div class="features">
             <h3>Features</h3>
             <ul>
-                <li>Lock screen and Dynamic Island controls</li>
-                <li>Custom work/break durations</li>
-                <li>Personal goal tracking</li>
-                <li>Custom and system alert sounds</li>
-                <li>Private and ad-free</li>
+                <li>Lock screen & Dynamic Island timer controls (iOS 16+)</li>
+                <li>Custom work & break durations to match your workflow</li>
+                <li>
+                    <strong>Integrated Goal Tracking:</strong>
+                    Track your <span style="color:#227c9d;">daily, weekly, and monthly goals</span> alongside Pomodoro sessions.
+                </li>
+                <li>Custom and system alert sounds—including bespoke timer completion alerts</li>
+                <li>
+                    <strong>Privacy First:</strong> No accounts, no ads. All data stays local on your device.
+                </li>
             </ul>
         </div>
+
+        <!-- GOALS HIGHLIGHT -->
+        <div class="goals-highlight">
+            <h3 style="color:#e49010;">Achieve More with Integrated Goal Tracking</h3>
+            <p>
+                Pulse isn’t just a timer—it’s your personal achievement dashboard.  
+                Set and review <strong>daily, weekly, and monthly goals</strong> for work, study, or wellness.  
+                Check off tasks, see progress, and build habits while you focus—one Pomodoro at a time.
+            </p>
+            <ul>
+                <li>Easy entry and review for each goal period</li>
+                <li>Track completion and habit streaks visually</li>
+                <li>Simplified progress interface right inside the app</li>
+            </ul>
+        </div>
+
+        <!-- PRIVACY HIGHLIGHT -->
+        <div class="privacy-highlight">
+            <h3 style="color:#227c9d;">
+                <span class="shield">🔏</span>
+                Your Data is Always Private
+            </h3>
+            <p>
+                Pulse stores your goals and timer history locally on your iPhone.<br>
+                <strong>No accounts, no cloud sync, and absolutely no tracking or ads.</strong><br>
+                Your information is yours—always.
+            </p>
+        </div>
+
+        <!-- GALLERY / VISUALS -->
         <div class="gallery">
+            <h3>See Pulse In Action</h3>
             <img src="gallery1.png" alt="Timer running on lock screen" />
             <img src="gallery2.png" alt="Goal tracking view" />
         </div>
-        <div class="features">
-    <h3>Features</h3>
-    <ul>
-        <li>Lock screen and Dynamic Island controls</li>
-        <li>Custom work/break durations</li>
-        <li>Personal goal tracking</li>
-        <li>Custom and system alert sounds</li>
-        <li>
-            <strong>
-                <span style="color:#227c9d;">Privacy First:</span>
-            </strong>
-            All data stays on your device—no cloud sync, no tracking, no ads.
-        </li>
-    </ul>
-</div>
-<div class="privacy-highlight" style="background:#e9f5fd;padding:1em;border-radius:8px;margin:2em 0;">
-    <h3 style="color:#227c9d;">Your Data is Always Private</h3>
-    <p>
-        Pulse stores your goals and timer history locally on your iPhone. 
-        No accounts, no cloud sync, and absolutely no tracking. Your information is yours—always.
-    </p>
-</div>
+
+        <!-- TESTIMONIALS -->
         <div class="testimonials">
             <h3>What Users Say</h3>
-            <blockquote>“Pulse replaced all my other timers.”</blockquote>
-            <blockquote>“The goals tracker keeps me motivated!”</blockquote>
+            <blockquote>
+                “Pulse replaced all my other timers. I love the integrated goals tracking.”
+            </blockquote>
+            <blockquote>
+                “Seeing my daily progress keeps me focused and motivated.”
+            </blockquote>
         </div>
+
+        <!-- FAQ -->
         <div class="faq">
-            <h3>FAQ</h3>
-            <p><strong>Does Pulse work with the lock screen?</strong> Yes!</p>
-            <p><strong>Can I use custom sounds?</strong> Yes!</p>
-            <p><strong>No ads or data tracking?</strong> 100% privacy, always.</p>
+            <h3>Frequently Asked Questions</h3>
+            <p><strong>Does Pulse work with the lock screen?</strong><br>
+            Yes — start and control timers right from your lock screen and Dynamic Island.</p>
+
+            <p><strong>Can I use custom alert sounds?</strong><br>
+            Absolutely! Choose from built-in options or upload your own short alert sound.</p>
+
+            <p><strong>Does Pulse track or collect any of my data?</strong><br>
+            <strong>No.</strong> Your usage and goals are stored locally on-device. No tracking, sharing, or ads—ever.</p>
+
+            <p><strong>Do I need an account?</strong><br>
+            <strong>No registration required.</strong> Just download, set your goals, and go.</p>
         </div>
+
+        <!-- CONTACT / FOOTER -->
         <div class="contact">
-            <h3>Contact</h3>
+            <h3>Contact & Support</h3>
             <p>Email: <a href="mailto:support@pulsapp.com">support@pulsapp.com</a></p>
+            <p>Twitter: <a href="https://twitter.com/PomodoroPulse" target="_blank">@PomodoroPulse</a></p>
+            <p>
+                <a href="#">Privacy Policy</a>
+            </p>
         </div>
+
     </div>
 </body>
 </html>
